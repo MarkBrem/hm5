@@ -1,16 +1,15 @@
-export const App = () => {
+import React from 'react';
+import { GlobalStyle } from './styles/globalStyles';
+import { RecipeList } from './RecipeList';
+
+
+export function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <GlobalStyle />
+      <h1>Список рецептів</h1>
+      <RecipeList />
     </div>
   );
-};
+}
+
